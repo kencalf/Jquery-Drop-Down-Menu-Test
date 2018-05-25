@@ -1,0 +1,117 @@
+
+
+
+@font-face {
+font-family: "Neutraface 2 Display Titling";
+src: url(../neutraface.otf);
+}
+
+body{
+	background:#666;
+	font-family:"Neutraface 2 Display Titling" ;
+	text-transform:uppercase;
+}
+
+#page{
+	margin-left:auto;
+	width:70%;
+	max-width:900px;
+	height:1000px;
+	box-shadow:0 0 20px 1px black;
+	padding:20px;
+	background: url(..//images/2.jpg)  ;
+	margin-right:auto;
+	position:relative;
+	z-index:-1;
+}
+
+p{
+	color:white;
+}
+
+/*--------------------Need---------------------------------*/
+.cd-dropdown ul li {
+	position: absolute;
+	width: 400%;
+	pointer-events: none;
+	display:block;
+}
+
+/*--------------------Need---------------------------------*/
+.cd-active.cd-dropdown ul li {
+	pointer-events: auto;
+}
+
+/*--------------------Nav Options Hovering---------------------------------*/
+.cd-active.cd-dropdown ul li span:hover {
+	color: #000;
+	margin-left:20px;
+}
+
+/*--------------------THE WHOLE NAVIGATION BLOCK---------------------------------*/
+.cd-dropdown,
+.cd-select {
+	position: fixed;
+	width: 100px;
+	margin-left:-10px;
+	margin-top:-10px;
+	display: block;
+}
+/*--------------------Nav Button Styles---------------------------------*/
+.cd-dropdown > span {
+	width:130%;
+	height: 40px;
+	line-height: 60px;
+	color: #666;
+	font-size: 25px;
+	background: #000;
+	display: block;
+	padding: 0 20px 10px 20px;
+	position: relative;
+	cursor: pointer;
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;
+}
+
+/*--------------------Nav Button Hover---------------------------------*/
+.cd-dropdown > span:hover {
+	color: #666;
+	background: #FFF;
+}
+
+/*--------------------Arrow---------------------------------*/
+.cd-dropdown > span:after {
+	display:none;
+}
+
+/*--------------------List---------------------------------*/
+.cd-dropdown ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: absolute;
+	top:0px;
+}
+
+/*--------------------OPTIONS LIST---------------------------------*/
+.cd-dropdown ul li span {
+	width: 100%;
+	background:none;
+	line-height: 10px;
+	padding: 5px;
+	display: block;
+	color: #FFF;
+	cursor: pointer;
+	text-align: left;
+	font-size:20px;
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;
+}
+
